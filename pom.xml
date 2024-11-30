@@ -10,6 +10,24 @@
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
+      <properties>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+<dependency>
+  <groupId>javax.servlet</groupId>
+  <artifactId>javax.servlet-api</artifactId>
+  <version>4.0.1</version>
+  <scope>provided</scope>
+</dependency>
+<plugins>
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>3.3.2</version>
+  </plugin>
+</plugins>
+
       <artifactId>junit</artifactId>
       <version>4.13.2</version>
       <scope>test</scope>
